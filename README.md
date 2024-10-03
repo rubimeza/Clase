@@ -54,7 +54,7 @@ mv *.fastq raw_reads/
 conda activate hybpiper
 ```
 
-## Parte 2: Revisar calidad del archivo target
+## Parte 2: Revisar calidad del *target_file*
 ```
 less test_targets.fasta
 ```
