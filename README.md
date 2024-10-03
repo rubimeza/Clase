@@ -142,7 +142,7 @@ Para descargar del servidor y ver el archivo png en la computadora local
 # Para Windows 10 con ssh
 # Ver como se llama la carpeta principal en la que estamos y cuál es el nombre de usuario
 echo %cd%
-scp -P 14420 rubis@189.241.xxx/xxx:/home/rubis/hybpiper_tutorial/test_dataset/recovery_heatmap.png C:\Users\usr\Desktop
+scp -P 14420 rubis@189.241.xxx/xxx:/mnt/furys/rubis/hybpiper_tutorial/test_dataset/recovery_heatmap.png C:\Users\usr\Desktop
 ```
 
 ```
