@@ -54,7 +54,7 @@ mv *.fastq raw_reads/
 conda activate hybpiper
 ```
 
-### Parte 2: Revisar calidad del archivo target
+## Parte 2: Revisar calidad del archivo target
 ```
 less test_targets.fasta
 ```
@@ -62,7 +62,7 @@ less test_targets.fasta
 hybpiper check_targetfile -t_dna test_targets.fasta
 ```
 
-### Parte 3: Ensamble
+## Parte 3: Ensamble
 ```
 # Ensamblar solo una muestra
 hybpiper assemble -t_dna test_targets.fasta -r NZ281_R*_test.fastq --prefix NZ281 --bwa --cpu 4
@@ -94,7 +94,7 @@ ls *
 ```
 
 
-### Parte 4: Estadisticos de ensamble
+## Parte 4: Estadisticos de ensamble
 
 ```
 hybpiper stats -t_dna test_targets.fasta gene namelist.txt
@@ -158,7 +158,7 @@ scp -p 14420 rubis@189.241.xxx/xxx:/home/rubis/hybpiper_tutorial/test_dataset/re
 
 
 
-### Parte 5: Extracción de secuencias
+## Parte 5: Extracción de secuencias
 
 ```
 ### Generar matrices fasta de exones
@@ -171,7 +171,7 @@ hybpiper retrieve_sequences dna -t_dna test_targets.fasta --sample_names namelis
 hybpiper retrieve_sequences intron -t_dna test_targets.fasta --sample_names namelist.txt --fasta_dir intron_fastas
 ```
 
-### Parte 6: Revisar parálogos
+## Parte 6: Revisar parálogos
 
 ```
 ### Generar archivos de paralogos (directorios fasta, estadisticos y heatmap)
