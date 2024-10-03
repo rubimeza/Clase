@@ -4,13 +4,13 @@ Este repositorio sirve para recordar todo lo que no debo hacer
 
 ## Tutorial para hybpiper
 
-mkdir hybpiper_tutorial
+'mkdir hybpiper_tutorial'
 
 cd hybpiper_tutorial
 
 wget https://github.com/mossmatters/HybPiper/raw/master/test_dataset.tar.gz
 
-# Descomprimir datos de archivo .tar.gz
+## Descomprimir datos de archivo .tar.gz
 tar -zxvf test_dataset.tar.gz
 
 rm test_dataset.tar.gz
@@ -29,7 +29,7 @@ mv *.fastq raw_reads/
 
 conda activate hybpiper
 
-# Revisar calidad del archivo target
+## Revisar calidad del archivo target
 hybpiper check_targetfile -t_dna test_targets.fasta
 
 # Ensamblar solo una muestra
