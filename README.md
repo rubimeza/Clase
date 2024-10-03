@@ -183,7 +183,7 @@ ls paralog*
 column -t -s $'\t' paralog_report.tsv
 ```
 
-Ver 
+Ver árboles de parálogos
 
 ```
 cat gene074_paralogs_all.fasta | mafft --auto - | FastTree -nt -gtr > gene074.paralogs.tre
