@@ -137,19 +137,25 @@ ls
 ```
 
 
-Para usar scp hay tres alternativas posibles en este caso:
+Para descargar del servidor y ver el archivo png en la computadora local
+```
+# Para Windows 10 con ssh
+# Ver como se llama la carpeta principal en la que estamos y cuál es el nombre de usuario
+echo %cd%
+scp -P 14420 rubis@189.241.xxx/xxx:/home/rubis/hybpiper_tutorial/test_dataset/recovery_heatmap.png C:\Users\usr\Desktop
+```
 
 ```
-scp -P 14420 ruta/archivo rubis@189.241.xxx/xxx:/mnt/fury/rubis/
-```
-
-```
+# Si no funciona el anterior o es una versión anterior a Windows 10, instala Putty y utiliza pscp
 pscp -scp  rubis@189.241.xxx/xxx:/home/rubis/hybpiper_tutorial/test_dataset/recovery_heatmap.png C:\Users\usr\Desktop
 ```
 
 ```
-scp rubis@189.241.xxx/xxx:/home/rubis/hybpiper_tutorial/test_dataset/recovery_heatmap.png C:\Users\usr\Desktop
+# En sistema UNIX
+scp -p 14420 rubis@189.241.xxx/xxx:/home/rubis/hybpiper_tutorial/test_dataset/recovery_heatmap.png /home/usr/Desktop
 ```
+
+
 
 
 ### Parte 5: Extracción de secuencias
