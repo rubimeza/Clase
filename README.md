@@ -195,11 +195,8 @@ Generar heatmap de longitud de secuencias recuperadas
 ```
 hybpiper recovery_heatmap seq_lengths.tsv
 ```
-
-```
-ls
-```
-[results]:https://drive.google.com/file/d/1_2B4ifqcEYCnJIHSQbzSd1KSUsXnr_AI/view?usp=sharing
+Heatmap de recuperación para datos de *Artocarpus*
+![alt text](https://github.com/rubimeza/Clase/blob/main/recovery_heatmap.png?raw=true)
 
 Para descargar del servidor y ver el archivo png en la computadora local
 ```
